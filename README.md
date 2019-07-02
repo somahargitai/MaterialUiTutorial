@@ -1,44 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Material UI Tutorial
+This is an introducton with simple examples on using Material UI in a React + Typescript environment.
 
-## Available Scripts
+## Get Started
+- prequisites -
+You will need node, npm and I highly recommend to have Git and VS Code with your favourite [extensions](https://gist.github.com/somahargitai/486d9d747d9922cede777e319e124d0c).
 
-In the project directory, you can run:
+- [create-react-app](https://github.com/facebook/create-react-app) supports typescript, so you can simply create your app like: 
+  - `npx create-react-app name-off-application --typescript`
 
-### `npm start`
+- install [Material UI](https://material-ui.com/)
+  - `npm install @material-ui/core`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- install [Styled Components](https://www.styled-components.com/) -
+Originally I wanted to avoid using styling, just show Material UI capabilities before ANY kind of styles. Unfortunately some elements without styles are so ugly that finally I just added Styled Components. It depends on you how you style your Material UI components. MUI itself provides a styling package. My library of choice is Styled Components. I tried not to rely on it too much.
+  - `npm install --save styled-components`
+  - `npm install @types/styled-components`
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Clean that ridiculous React logo. 
+Okay, it is not ridiculous, but you don't need it and it is so big that you won't see your new elements below. You can delete it in _src/App.tsx_ or at lease make things smaller in _App.css_ with modifying some line: 
+`.App-logo { height: 10vmin; }` instead of 40vmin, `.App-header { min-height: 20vh; }` instead of 100vh, `@keyframes App-logo-spin { to {    transform: rotate(30deg); } }` instead of 360deg, and add `.App-header p { margin: 0; }`.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Add some Material elements
+Just browse Material UI component site and paste a [Button](https://material-ui.com/components/buttons/) or a [Checkbox](https://material-ui.com/components/selects/).
 
-### `npm run build`
+## Theming
+https://material-ui.com/customization/themes/
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Recommendations
+Example projects by Material UI: https://material-ui.com/getting-started/example-projects/
