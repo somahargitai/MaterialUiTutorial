@@ -15,6 +15,7 @@ import logo from "./logo.svg";
 import burgers   from './images/burgers.jpg';
 import breakfast from './images/breakfast.jpg';
 import "./App.css";
+import TextInput from './components/TextInput';
 
 const App: React.FC = () => {
   const tileData = [
@@ -62,6 +63,14 @@ const App: React.FC = () => {
       </header>
 
       <Container maxWidth="sm">
+        <TextInput
+        status="default"
+        setStatus="soma" 
+        required
+        placeHolderText="soma"
+        label="Outlined"
+        
+        children="soma" />
         {/* Start Here */}
         <h2>Button and Typography</h2>
         <Button variant="contained" color="primary">
